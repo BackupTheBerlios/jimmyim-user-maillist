@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Jimmyim-user] Problem connecting to MSN network
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/jimmyim-user/2006-October/index.html" >
+   <LINK REL="made" HREF="mailto:jimmyim-user%40lists.berlios.de?Subject=Re%3A%20%5BJimmyim-user%5D%20Problem%20connecting%20to%20MSN%20network&In-Reply-To=%3CPine.LNX.4.64.0610212134250.16952%40mail.nilings.se%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000011.html">
+   <LINK REL="Next"  HREF="000007.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Jimmyim-user] Problem connecting to MSN network</H1>
+    <B>Mathias Sundman</B> 
+    <A HREF="mailto:jimmyim-user%40lists.berlios.de?Subject=Re%3A%20%5BJimmyim-user%5D%20Problem%20connecting%20to%20MSN%20network&In-Reply-To=%3CPine.LNX.4.64.0610212134250.16952%40mail.nilings.se%3E"
+       TITLE="[Jimmyim-user] Problem connecting to MSN network">mathias at nilings.se
+       </A><BR>
+    <I>Sat Oct 21 21:52:51 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000011.html">[Jimmyim-user] Problem connecting to MSN network
+</A></li>
+        <LI>Next message: <A HREF="000007.html">[Jimmyim-user] Problem connecting to MSN network
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#12">[ date ]</a>
+              <a href="thread.html#12">[ thread ]</a>
+              <a href="subject.html#12">[ subject ]</a>
+              <a href="author.html#12">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>On Sat, 21 Oct 2006, Matev Jekovec wrote:
+
+&gt;<i> Mathias Sundman pravi:
+</I>&gt;&gt;<i> Hmm, that's kinda where I'm stuck right now. I'm trying to launch the
+</I>&gt;&gt;<i> app from inside Eclipse using the wireless toolkit emulator. However
+</I>&gt;&gt;<i> it just halts with the following error:
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> ALERT: java/lang/ClassFormatError: Bad version information.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> If I download the .jar/.jad file you provide on your site I can
+</I>&gt;&gt;<i> successfully run in it the emulator though.
+</I>&gt;<i> 
+</I>&gt;<i> Did you try running the jad manually with emulator? (emulator.exe should
+</I>&gt;<i> be located in your j2me wireless toolkit I think or even in java dir -
+</I>&gt;<i> under Linux).
+</I>
+I'm trying two diffrent tracks right now and I'm kinda stuck on both :-)
+
+1) Running it from within Eclipse using the emulator.
+2) Exporting to a JAR file and run manually in the emulator.
+
+
+Problem #1 is still stuck as above on the error &quot;Bad version information&quot;. 
+Is there any reference in the source or some desc file that refers to the 
+version of Java or the wireless toolkit you used that I might need to 
+change to match the versions I'm using?
+
+
+Problem #2, I'm not really confident with how to create the .jar and .jad 
+file properly. I rightclick the project and select Export and then 
+Java-&gt;JAR file.
+
+I'm seeing a number of problems.
+
+a) At the end of the export wizard I'm asked to enter &quot;Select the class of 
+the application entry point&quot;, but when I click Browse the window is empty 
+and even if I manually writes &quot;jimmy&quot; there it complains about that the 
+class is not selected for export or has no main method.
+
+b) If I extract the created jar file and looks in the MANIFEST.MF file it 
+only contains
+
+Manifest-Version: 1.0
+
+while the MANIFEST.MF file in your jar file contains alot more info. This 
+causes the emulator to halt when I try to run my jar file with the 
+following error:
+
+com.sun.kvem.midletsuite.InvalidJadException: Reason = 13
+The file Manifest is missing the required attribute: MIDlet-Name
+
+So, the question is how do I make Eclipse include the project details in 
+the exported manifest file?
+
+c) How do I create the .jad file. I'm currently using your .jad file and 
+simply modiles the size attribute to match my jar file.
+
+
+d) I can see in the source zip file there is a build.xml file that seems 
+to hold the attributes I need to put in the manifest file. How do I use 
+that xml file to build the .jar/.jad file?
+
+
+Sorry for all these qustions, but right now I just feel like a big 
+question mark and am not sure really where to dig for more info about 
+these problems..
+
+Cheers / Mathias
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000011.html">[Jimmyim-user] Problem connecting to MSN network
+</A></li>
+	<LI>Next message: <A HREF="000007.html">[Jimmyim-user] Problem connecting to MSN network
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#12">[ date ]</a>
+              <a href="thread.html#12">[ thread ]</a>
+              <a href="subject.html#12">[ subject ]</a>
+              <a href="author.html#12">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/jimmyim-user">More information about the Jimmyim-user
+mailing list</a><br>
+</body></html>

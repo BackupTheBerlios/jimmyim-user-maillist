@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Jimmyim-user] CLDC-1.0
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/jimmyim-user/2006-October/index.html" >
+   <LINK REL="made" HREF="mailto:jimmyim-user%40lists.berlios.de?Subject=Re%3A%20%5BJimmyim-user%5D%20CLDC-1.0&In-Reply-To=%3C8506C3905ED0764F889ADEB33E3A9E8077E161%40MAIA.scopus.net%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000007.html">
+   <LINK REL="Next"  HREF="000014.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Jimmyim-user] CLDC-1.0</H1>
+    <B>Arik Salomon</B> 
+    <A HREF="mailto:jimmyim-user%40lists.berlios.de?Subject=Re%3A%20%5BJimmyim-user%5D%20CLDC-1.0&In-Reply-To=%3C8506C3905ED0764F889ADEB33E3A9E8077E161%40MAIA.scopus.net%3E"
+       TITLE="[Jimmyim-user] CLDC-1.0">ariks at scopus.net
+       </A><BR>
+    <I>Sun Oct 22 11:33:40 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000007.html">[Jimmyim-user] Problem connecting to MSN network
+</A></li>
+        <LI>Next message: <A HREF="000014.html">[Jimmyim-user] Problem connecting to MSN network
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#13">[ date ]</a>
+              <a href="thread.html#13">[ thread ]</a>
+              <a href="subject.html#13">[ subject ]</a>
+              <a href="author.html#13">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi again,
+I saw some Traffic here so I would like to continue the issue of
+CLDC-1.0:
+After your answer I tried to investigate it..
+I tried to compile it by myself and got some errors:
+cannot resolve symbol symbol  : method floor (int)....
+I found that you are using the &quot;float&quot; in 2 places:
+1. Utils.java - in byteArrayToHexString,
+Just for trying, I replaced it with byteArrayToHexString I took from
+Jimm.
+Its more shorter, and you can't convince me you need float to convert
+Array to Hex String...
+2. Error preverifying class jimmy.ui.Splash,
+I didn't finish to investigate it (just remove some lines to see if I
+can compile it)
+I succeed to compile it meanwhile without the &quot;graphics&quot;....
+    Best Regards
+	ariX
+
+ 
+
+________________________________
+
+From: <A HREF="https://lists.berlios.de/mailman/listinfo/jimmyim-user">jimmyim-user-bounces at lists.berlios.de</A>
+[mailto:<A HREF="https://lists.berlios.de/mailman/listinfo/jimmyim-user">jimmyim-user-bounces at lists.berlios.de</A>] On Behalf Of Zoran Mesec
+Sent: Thursday, October 05, 2006 4:04 PM
+To: <A HREF="https://lists.berlios.de/mailman/listinfo/jimmyim-user">jimmyim-user at lists.berlios.de</A>
+Subject: Re: [Jimmyim-user] CLDC-1.0
+
+
+Hello!
+When we started this project, we decided to implement only CLDC 1.1. 
+The reason was, that we implemented all protocols in j2me. Some similar 
+applications  implement protocols in ordinary java(which is easier),
+then create a TCP/IP server that communicate with clients that are
+written in j2me. Here is the difference with JimmyIM - JimmyIM does not
+use any  
+special server. All protocols are implemented on your mobile phone. It
+is quite dificult to implement a protocol in j2me, 
+therefore we decided for CLDC 1.1 which has many features that ease the
+implementation(such as float, Math class, etc...). 
+
+At the moment it is impossible to compile JimmyIM in CLDC 1.0., because
+CLDC 1.0. does not support class float and class Math. These two classes
+are essential for ICQ implementation.
+
+But do not loose faith. You have given us a challenge and we will
+explore the possibilities how to avoid using this two classes and
+compile in CLDC  1.0 as soon as possible. 
+
+JimmyIM development team would like to thank you for your interest in
+our application. Please stay informed about upgrades &amp; newest version
+through our website: jimmyim.berlios.de and our mailing lists.
+
+Regards, 
+Zoran Mesec
+JimmyIM development team
+<A HREF="http://jimmyim.berlios.de">http://jimmyim.berlios.de</A>
+
+
+2006/10/5, Arik Salomon &lt; <A HREF="https://lists.berlios.de/mailman/listinfo/jimmyim-user">ariks at scopus.net</A>&gt;: 
+
+	Hello,
+	I m new in this list, so maybe u already discuss this issue..
+	My question is if there is any possible to compile it
+	For CLDC-1.0 and not CLDC1.1 since my mobile support only
+	CLDC-1.0...
+	  Best Regards 
+	        Arik
+	_______________________________________________
+	Jimmyim-user mailing list
+	<A HREF="https://lists.berlios.de/mailman/listinfo/jimmyim-user">Jimmyim-user at lists.berlios.de</A> 
+	<A HREF="https://lists.berlios.de/mailman/listinfo/jimmyim-user">https://lists.berlios.de/mailman/listinfo/jimmyim-user</A>
+	
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000007.html">[Jimmyim-user] Problem connecting to MSN network
+</A></li>
+	<LI>Next message: <A HREF="000014.html">[Jimmyim-user] Problem connecting to MSN network
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#13">[ date ]</a>
+              <a href="thread.html#13">[ thread ]</a>
+              <a href="subject.html#13">[ subject ]</a>
+              <a href="author.html#13">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/jimmyim-user">More information about the Jimmyim-user
+mailing list</a><br>
+</body></html>
